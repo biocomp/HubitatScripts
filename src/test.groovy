@@ -20,3 +20,12 @@ class AtomicStateExample1StateTest extends Specification {
             sandbox.run()
     }
 }
+
+class AtomicStateExample2Test extends Specification {
+    HubitatAppSandbox sandbox = new HubitatAppSandbox(new File("AtomicStateExample2.groovy"))
+
+    def "Basic validation"() {
+        expect:
+            sandbox.run()
+    }
+}
